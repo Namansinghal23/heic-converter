@@ -1,0 +1,130 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f7fb;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 400px;
+  transition: 0.3s;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+.title {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#drop-area {
+  border: 2px dashed #7ba9f7;
+  border-radius: 15px;
+  padding: 20px;
+  background: #eef4ff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#drop-area:hover {
+  background: #dce9ff;
+  transform: scale(1.02);
+}
+
+.button {
+  margin-top: 10px;
+  background: #7ba9f7;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #5b8ae0;
+  transform: scale(1.05);
+}
+
+#preview img {
+  max-width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.format-buttons {
+  margin: 20px 0;
+}
+
+.convert-btn {
+  background: #4CAF50;
+  color: white;
+  padding: 12px 18px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.convert-btn:hover {
+  background: #43a047;
+  transform: scale(1.05);
+}
+
+.download-btn {
+  display: inline-block;
+  background: #ff9800;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #e68900;
+  transform: scale(1.05);
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #d3d3d3;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  pointer-events: none; /* disabled by default */
+  transition: background 0.3s ease;
+}
+
+.download-btn.active {
+  background: #4caf50;
+  pointer-events: auto;
+}
+
+.download-btn:hover {
+  background: #45a049;
+}
